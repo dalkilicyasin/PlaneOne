@@ -17,7 +17,7 @@ class MainPageViewModel {
     var flightProtocolDelegate: FlightServiceProtocol
     var flightLocations: [CLLocation]?
 
-    var searchDistance = 100.00 //km
+    var searchDistance = 50.00 //km
     var lomin = 0.00
     var lamin = 0.00
     var lomax = 0.00
@@ -42,7 +42,7 @@ class MainPageViewModel {
     }
 
     func fetchFlightData(){
-       
+        self.flights = []
         flightProtocolDelegate.fetchFlights(lomin: Float(lomin), lamin: Float(lamin), lomax: Float(lomax), lamax: Float(lamax), completion: { [weak self] result in
 
             guard let strongSelf = self else {return}

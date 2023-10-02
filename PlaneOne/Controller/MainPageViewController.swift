@@ -26,8 +26,8 @@ class MainPageViewController: UIViewController {
 
     private lazy var customLocationLabel: UILabel = {
         let locationLabel = UILabel()
-        locationLabel.backgroundColor = .white
-        locationLabel.textColor = .blue
+        locationLabel.backgroundColor = .red.withAlphaComponent(0.5)
+        locationLabel.textColor = .black
         return locationLabel
     }()
 
@@ -144,8 +144,8 @@ extension MainPageViewController {
 
                 strongSelf.mapView.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)), animated: true)
 
-                //Get max 100 km distance around user
-                strongSelf.getAdress(latitute: location.coordinate.latitude, longitute: location.coordinate.longitude)
+                //Get max 50 km distance around user
+                strongSelf.searchDistance(searchAre: 100, latitude: location.coordinate.latitude, longitute: location.coordinate.longitude)
 
                 //Get address user address
                 self?.getAdress(latitute: location.coordinate.latitude, longitute: location.coordinate.longitude)
@@ -178,11 +178,11 @@ extension MainPageViewController: MKMapViewDelegate {
         let center = mapView.centerCoordinate
         print("\(center.latitude) --\(center.longitude) ")
         self.mainPAgeViewModel?.coordinate = center
-        self.mainPAgeViewModel?.searchDistance = 100.00
+        self.mainPAgeViewModel?.searchDistance = 50.00
         self.refreshData()
 
-        //Get max 100 km distance around user
-        self.searchDistance(searchAre: 100, latitude: center.latitude, longitute: center.longitude)
+        //Get max 50 km distance around user
+        self.searchDistance(searchAre: 50, latitude: center.latitude, longitute: center.longitude)
 
         //Get address
         self.getAdress(latitute: center.latitude, longitute: center.longitude)
@@ -236,10 +236,9 @@ extension MainPageViewController {
 
     @objc func hideKeyboard() {
         view.endEditing(true)
-        if customTextField.text?.count ?? 0 > 0 {
+        guard self.customTextField.text?.count != 0 else {return}
             self.refreshData()
-            self.searchDistance(searchAre: self.mainPAgeViewModel?.searchDistance ?? 0.00, latitude: self.mainPAgeViewModel?.coordinate.latitude ?? 0.00, longitute: self.mainPAgeViewModel?.coordinate.longitude ?? 0.00)
-        }
+            self.searchDistance(searchAre: self.mainPAgeViewModel?.searchDistance ?? 50.00, latitude: self.mainPAgeViewModel?.coordinate.latitude ?? 0.00, longitute: self.mainPAgeViewModel?.coordinate.longitude ?? 0.00)
     }
 }
 
@@ -260,16 +259,13 @@ extension MainPageViewController {
         let allAnnotations = self.mapView.annotations
         self.mapView.removeAnnotations(allAnnotations)
         self.selectedCountryLabel.text = mainPAgeViewModel?.selectedCountry
-        self.customTextField.text = ""
         self.createAnnotations(locations: self.mainPAgeViewModel?.flights ?? [])
-
         guard self.mainPAgeViewModel?.flights.count == 0 else {return}
-
         self.mainPAgeViewModel?.contDownTimer()
     }
 }
 
-//MARK: Get max 100 km distance around user
+//MARK: Get max 50 km distance around user
 extension MainPageViewController{
     func searchDistance(searchAre: Double, latitude: CLLocationDegrees, longitute: CLLocationDegrees ){
         let minLat = latitude - ((self.mainPAgeViewModel?.searchDistance ?? 0.00) / 69)
