@@ -127,13 +127,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		D931783C2AC8D3A3003A5E42 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		D9345F882AC86C1C007D5D03 = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +155,6 @@
 				D9345F962AC86C1C007D5D03 /* SceneDelegate.swift */,
 				D92731942ACA362800D9A410 /* Extensions */,
 				D9348C772AC9F9B10060369B /* Singleton */,
-				D931783C2AC8D3A3003A5E42 /* Views */,
 				D931783B2AC8D38C003A5E42 /* Controller */,
 				D931783A2AC8D376003A5E42 /* ViewModel */,
 				D9345FD32AC89C29007D5D03 /* NetworkService */,
