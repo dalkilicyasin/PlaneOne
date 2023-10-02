@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D92731962ACA364100D9A410 /* String.Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92731952ACA364100D9A410 /* String.Extentions.swift */; };
 		D93178392AC8B11B003A5E42 /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93178382AC8B11B003A5E42 /* MainPageViewModel.swift */; };
 		D931783E2AC8D8EC003A5E42 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D931783D2AC8D8EC003A5E42 /* LocationManager.swift */; };
 		D9345F952AC86C1C007D5D03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9345F942AC86C1C007D5D03 /* AppDelegate.swift */; };
@@ -57,7 +56,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D92731952ACA364100D9A410 /* String.Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.Extentions.swift; sourceTree = "<group>"; };
 		D93178382AC8B11B003A5E42 /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
 		D931783D2AC8D8EC003A5E42 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		D9345F912AC86C1C007D5D03 /* PlaneOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaneOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,7 +153,6 @@
 			children = (
 				D9345F942AC86C1C007D5D03 /* AppDelegate.swift */,
 				D9345F962AC86C1C007D5D03 /* SceneDelegate.swift */,
-				D9FB33242ACB690B00C12ADA /* Extensions */,
 				D92731942ACA362800D9A410 /* MockClasses */,
 				D9348C772AC9F9B10060369B /* Singleton */,
 				D931783B2AC8D38C003A5E42 /* Controller */,
@@ -233,14 +230,6 @@
 				D9345FC92AC898F7007D5D03 /* Flights.swift */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		D9FB33242ACB690B00C12ADA /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				D92731952ACA364100D9A410 /* String.Extentions.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,7 +372,6 @@
 			files = (
 				D93178392AC8B11B003A5E42 /* MainPageViewModel.swift in Sources */,
 				D9345F992AC86C1C007D5D03 /* MainPageViewController.swift in Sources */,
-				D92731962ACA364100D9A410 /* String.Extentions.swift in Sources */,
 				D9345F952AC86C1C007D5D03 /* AppDelegate.swift in Sources */,
 				D9345FC82AC8989E007D5D03 /* FligthResponseModel.swift in Sources */,
 				D931783E2AC8D8EC003A5E42 /* LocationManager.swift in Sources */,

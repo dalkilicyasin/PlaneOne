@@ -8,10 +8,18 @@
 import Foundation
 import UIKit
 
+
+//MARK: BaseURL and user info for data fetch
 enum Constants: String {
     case baseURL = "https://opensky-network.org/api/states/all"
     case userName = "Dalkilic"
     case password = "Yd123456"
+}
+
+//MARK: Error Handling
+public enum ErrorClasss: Error {
+    case failedFetch
+    case unknown
 }
 
 // MARK: - Protocol
