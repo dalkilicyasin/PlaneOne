@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "49195016-F43C-446E-8022-1AA95B24B11D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83201630-2495-4435-9005-FEB0AF45FEB7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/NetworkService/FlightService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "fetchFlights(lomin:lamin:lomax:lamax:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "83201630-2495-4435-9005-FEB0AF45FEB7 - de1d653b289c97de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.FlightService.fetchFlights(lomin: Swift.Optional&lt;Swift.Float&gt;, lamin: Swift.Optional&lt;Swift.Float&gt;, lomax: Swift.Optional&lt;Swift.Float&gt;, lamax: Swift.Optional&lt;Swift.Float&gt;, completion: (Swift.Result&lt;PlaneOne.FligthResponseModel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/NetworkService/FlightService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2428">
+               </Location>
+               <Location
+                  uuid = "83201630-2495-4435-9005-FEB0AF45FEB7 - de1d653b289c97de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.FlightService.fetchFlights(lomin: Swift.Optional&lt;Swift.Float&gt;, lamin: Swift.Optional&lt;Swift.Float&gt;, lomax: Swift.Optional&lt;Swift.Float&gt;, lamax: Swift.Optional&lt;Swift.Float&gt;, completion: (Swift.Result&lt;PlaneOne.FligthResponseModel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/NetworkService/FlightService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2500">
+               </Location>
+               <Location
+                  uuid = "83201630-2495-4435-9005-FEB0AF45FEB7 - 8d9fce65baac812f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.FlightService.fetchFlights(lomin: Swift.Optional&lt;Swift.Float&gt;, lamin: Swift.Optional&lt;Swift.Float&gt;, lomax: Swift.Optional&lt;Swift.Float&gt;, lamax: Swift.Optional&lt;Swift.Float&gt;, completion: (Swift.Result&lt;PlaneOne.Flights, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/NetworkService/FlightService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2500">
+               </Location>
+               <Location
+                  uuid = "83201630-2495-4435-9005-FEB0AF45FEB7 - 14936ba4b2e14448"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.FlightService.fetchFlights(lomin: Swift.Optional&lt;Swift.Float&gt;, lamin: Swift.Optional&lt;Swift.Float&gt;, lomax: Swift.Optional&lt;Swift.Float&gt;, lamax: Swift.Optional&lt;Swift.Float&gt;, completion: (Swift.Result&lt;Swift.Array&lt;PlaneOne.Flights&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/NetworkService/FlightService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2500">
+               </Location>
+               <Location
+                  uuid = "83201630-2495-4435-9005-FEB0AF45FEB7 - 8d9fce65baac812f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.FlightService.fetchFlights(lomin: Swift.Optional&lt;Swift.Float&gt;, lamin: Swift.Optional&lt;Swift.Float&gt;, lomax: Swift.Optional&lt;Swift.Float&gt;, lamax: Swift.Optional&lt;Swift.Float&gt;, completion: (Swift.Result&lt;PlaneOne.Flights, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/NetworkService/FlightService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2524">
+               </Location>
+               <Location
+                  uuid = "83201630-2495-4435-9005-FEB0AF45FEB7 - de1d653b289c97de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.FlightService.fetchFlights(lomin: Swift.Optional&lt;Swift.Float&gt;, lamin: Swift.Optional&lt;Swift.Float&gt;, lomax: Swift.Optional&lt;Swift.Float&gt;, lamax: Swift.Optional&lt;Swift.Float&gt;, completion: (Swift.Result&lt;PlaneOne.FligthResponseModel, Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/NetworkService/FlightService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "2524">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "255741A6-B48C-4EDD-803F-3329EA6704F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/NetworkService/FlightService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchFlights(lomin:lamin:lomax:lamax:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C999986A-CFE3-490E-9D90-13224E9C774C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/ViewModel/MainPageViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "MainPageVieModelDelegate"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D951E950-F416-4041-BEDB-8B99CFCBFA42"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/ViewModel/MainPageViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "filterPlanesSelectedCountry(value:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D951E950-F416-4041-BEDB-8B99CFCBFA42 - f10c0ebe07efe273"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewModel.filterPlanesSelectedCountry(value: Swift.String) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/ViewModel/MainPageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "D951E950-F416-4041-BEDB-8B99CFCBFA42 - f10c0ebe07efe273"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewModel.filterPlanesSelectedCountry(value: Swift.String) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/ViewModel/MainPageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "D951E950-F416-4041-BEDB-8B99CFCBFA42 - f10c0ebe07efe212"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewModel.filterPlanesSelectedCountry(value: Swift.String) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/ViewModel/MainPageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "828B1090-A0B2-42E7-A0F8-742E3F0FD7E5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/ViewModel/MainPageViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "contDownTimer()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "828B1090-A0B2-42E7-A0F8-742E3F0FD7E5 - 5f01f5b762ec1f71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in PlaneOne.MainPageViewModel.contDownTimer() -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/ViewModel/MainPageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "640">
+               </Location>
+               <Location
+                  uuid = "828B1090-A0B2-42E7-A0F8-742E3F0FD7E5 - 5f01f5b762ec1f52"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in PlaneOne.MainPageViewModel.contDownTimer() -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/ViewModel/MainPageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "640">
+               </Location>
+               <Location
+                  uuid = "828B1090-A0B2-42E7-A0F8-742E3F0FD7E5 - 5f01f5b762ec1fb3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (__C.NSTimer) -&gt; () in PlaneOne.MainPageViewModel.contDownTimer() -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/ViewModel/MainPageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "640">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F896A03-6BED-478C-86F7-B2D9A970AB25"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/Controller/MainPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "mapView(_:didSelect:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1F896A03-6BED-478C-86F7-B2D9A970AB25 - 28134178f8d007c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewController.mapView(_: __C.MKMapView, didSelect: __C.MKAnnotationView) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/Controller/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "219"
+                  endingLineNumber = "219"
+                  offsetFromSymbolStart = "1460">
+               </Location>
+               <Location
+                  uuid = "1F896A03-6BED-478C-86F7-B2D9A970AB25 - 28134178f8d0009e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewController.mapView(_: __C.MKMapView, didSelect: __C.MKAnnotationView) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/Controller/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "197"
+                  endingLineNumber = "197"
+                  offsetFromSymbolStart = "1776">
+               </Location>
+               <Location
+                  uuid = "1F896A03-6BED-478C-86F7-B2D9A970AB25 - 28134178f8d000bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewController.mapView(_: __C.MKMapView, didSelect: __C.MKAnnotationView) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/Controller/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "1776">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6679425D-74E3-4539-AC59-3A1847DED3A7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/Controller/MainPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "260"
+            endingLineNumber = "260"
+            landmarkName = "refreshData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6679425D-74E3-4539-AC59-3A1847DED3A7 - 7c379dad164b5cbc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewController.refreshData() -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/Controller/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "259"
+                  endingLineNumber = "259"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "6679425D-74E3-4539-AC59-3A1847DED3A7 - 7c379dad164b5cdd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewController.refreshData() -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/Controller/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "260"
+                  endingLineNumber = "260"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD5B26A4-6AC2-409D-99FF-476979A11220"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/Controller/MainPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
+            landmarkName = "searchDistance(searchAre:latitude:longitute:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AD5B26A4-6AC2-409D-99FF-476979A11220 - 71e6a11efba59d1d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewController.searchDistance(searchAre: Swift.Double, latitude: Swift.Double, longitute: Swift.Double) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/Controller/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "274"
+                  endingLineNumber = "274"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "AD5B26A4-6AC2-409D-99FF-476979A11220 - 71e6a11efba59d7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewController.searchDistance(searchAre: Swift.Double, latitude: Swift.Double, longitute: Swift.Double) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/Controller/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "275"
+                  endingLineNumber = "275"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "319E2BED-7EF0-4FF2-86FD-2FF19530149E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/Controller/MainPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "mapView(_:regionDidChangeAnimated:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "319E2BED-7EF0-4FF2-86FD-2FF19530149E - 41052902b449bc2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewController.mapView(_: __C.MKMapView, regionDidChangeAnimated: Swift.Bool) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/Controller/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "181"
+                  endingLineNumber = "181"
+                  offsetFromSymbolStart = "716">
+               </Location>
+               <Location
+                  uuid = "319E2BED-7EF0-4FF2-86FD-2FF19530149E - 41052902b449ba3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewController.mapView(_: __C.MKMapView, regionDidChangeAnimated: Swift.Bool) -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/Controller/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "836">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E08A3B1-B5F8-45E5-AD9C-C66B7A45B885"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/Controller/MainPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
+            landmarkName = "hideKeyboard()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3E08A3B1-B5F8-45E5-AD9C-C66B7A45B885 - 587278ad2885874b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewController.hideKeyboard() -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/Controller/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "680">
+               </Location>
+               <Location
+                  uuid = "3E08A3B1-B5F8-45E5-AD9C-C66B7A45B885 - 587278ad2885872a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewController.hideKeyboard() -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/Controller/MainPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "240"
+                  endingLineNumber = "240"
+                  offsetFromSymbolStart = "680">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2624B5C5-4787-4E31-9A47-F15F4CBB2E83"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/ViewModel/MainPageViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "contDownTimer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05FCDB4F-EDEC-4A96-8656-6EB2C99AC182"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/ViewModel/MainPageViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "fetchFlightData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "05FCDB4F-EDEC-4A96-8656-6EB2C99AC182 - f119ce3945ecf54c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PlaneOne.MainPageViewModel.fetchFlightData() -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/ViewModel/MainPageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "05FCDB4F-EDEC-4A96-8656-6EB2C99AC182 - e4a85b33decbc45f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;PlaneOne.FligthResponseModel, Swift.Error&gt;) -&gt; () in PlaneOne.MainPageViewModel.fetchFlightData() -&gt; ()"
+                  moduleName = "PlaneOne"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yasindalkilic/Desktop/iOS%20Works/Projects/PlaneOne/PlaneOne/ViewModel/MainPageViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84AE6E37-FA60-4956-94E3-5E0368EDE660"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/Controller/MainPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "285"
+            endingLineNumber = "285"
+            landmarkName = "searchDistance(searchAre:latitude:longitute:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24E61673-4013-40A7-B8CA-BAB5AEEB6DD0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PlaneOne/Controller/MainPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
+            landmarkName = "searchDistance(searchAre:latitude:longitute:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
