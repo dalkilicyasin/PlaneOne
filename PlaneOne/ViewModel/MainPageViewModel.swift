@@ -16,7 +16,7 @@ protocol MainPageVieModelDelegate {
 class MainPageViewModel {
     var flightProtocolDelegate: FlightServiceProtocol
     var flightLocations: [CLLocation]?
-
+    
     var searchDistance = 50.00 //km
     var lomin = 0.00
     var lamin = 0.00
@@ -27,11 +27,11 @@ class MainPageViewModel {
     var coordinate = CLLocationCoordinate2D()
     var timeRemaining = 5
     var selectedCountry = "Selected Country :"
-
+    
     init(flightProtocolDelegate: FlightServiceProtocol = FlightService() ) {
         self.flightProtocolDelegate = flightProtocolDelegate
     }
-
+    
     func filterPlanesSelectedCountry(value: String){
         if flights.isEmpty {
             self.contDownTimer()
@@ -40,13 +40,13 @@ class MainPageViewModel {
         flights = self.flights.filter({$0.originCountry == value ? true : false})
         self.mainPageVieModelDelegate?.valueHasChanged(flight: flights, coordinate: self.coordinate)
     }
-
+    
     func fetchFlightData(){
         self.flights = []
         flightProtocolDelegate.fetchFlights(lomin: Float(lomin), lamin: Float(lamin), lomax: Float(lomax), lamax: Float(lamax), completion: { [weak self] result in
-
+            
             guard let strongSelf = self else {return}
-
+            
             switch result{
             case .success(let flights):
                 strongSelf.flights = flights.states ?? []
@@ -56,7 +56,7 @@ class MainPageViewModel {
             }
         })
     }
-
+    
     func contDownTimer() {
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (Timer) in
             if self.timeRemaining > 0 {
