@@ -17,13 +17,13 @@ enum Constants: String {
 // MARK: - Protocol
 
 public protocol FlightServiceProtocol: AnyObject {
-    func fetchFlights(lomin: Float?, lamin: Float?, lomax: Float?, lamax: Float?, completion: @escaping (Result<FligthResponseModel, Error>) -> Void)
+    func fetchFlights(lomin: Float?, lamin: Float?, lomax: Float?, lamax: Float?, completion: @escaping (Result<FligthResponseModel, ErrorClasss>) -> Void)
 }
 
 //MARK: - Class
 public class FlightService: FlightServiceProtocol {
 
-    public func fetchFlights(lomin: Float?, lamin: Float?, lomax: Float?, lamax: Float?, completion: @escaping (Result<FligthResponseModel, Error>) -> Void) {
+    public func fetchFlights(lomin: Float?, lamin: Float?, lomax: Float?, lamax: Float?, completion: @escaping (Result<FligthResponseModel, ErrorClasss>) -> Void) {
         let urlString = Constants.baseURL.rawValue + "?lomin=\(lomin ?? 0.0)&lamin=\(lamin ?? 0.0)&lomax=\(lomax ?? 0.0)&lamax=\(lamax ?? 0.0)"
         let loginString = "\(Constants.userName.rawValue):\(Constants.password.rawValue)"
         guard let loginData = loginString.data(using: String.Encoding.utf8) else {
@@ -45,7 +45,7 @@ public class FlightService: FlightServiceProtocol {
 
             if let error = error {
                 print("**** GEÇİCİ BİR HATA OLUŞTU: \(error.localizedDescription) ******")
-                completion(.failure(error))
+                completion(.failure(ErrorClasss.failedFetch))
                 return
             }
 
@@ -60,8 +60,8 @@ public class FlightService: FlightServiceProtocol {
                 let response = try decoder.decode(FligthResponseModel.self, from: data)
                 completion(.success(response))
             } catch {
-                print("********** JSON DECODE ERROR *******")
-                completion(.failure(error))
+                print("********** Your daily data fetch has expired pleaase make new Login to Opensky *******")
+                completion(.failure(ErrorClasss.failedFetch))
             }
         }
         task.resume()
