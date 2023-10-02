@@ -9,6 +9,12 @@ import UIKit
 import MapKit
 import SnapKit
 
+enum LocationSearchAreaStatus{
+    case zero
+    case value
+    case locationChanced
+}
+
 class MainPageViewController: UIViewController {
     
     var mainPAgeViewModel: MainPageViewModel?
@@ -179,7 +185,7 @@ extension MainPageViewController: MKMapViewDelegate {
         print("\(center.latitude) --\(center.longitude) ")
         self.mainPAgeViewModel?.coordinate = center
         self.mainPAgeViewModel?.searchDistance = 50.00
-        self.refreshData(true)
+        self.refreshData(.locationChanced)
 
         //Get max 50 km distance around user
         self.searchDistance(searchAre: 50, latitude: center.latitude, longitute: center.longitude)
@@ -239,9 +245,9 @@ extension MainPageViewController {
         view.endEditing(true)
         guard self.customTextField.text?.count != 0 else {
             self.mainPAgeViewModel?.searchDistance = 50.0
-            self.refreshData(false)
+            self.refreshData(.zero)
             return}
-        self.refreshData(true)
+        self.refreshData(.value)
         self.searchDistance(searchAre: self.mainPAgeViewModel?.searchDistance ?? 50.00, latitude: self.mainPAgeViewModel?.coordinate.latitude ?? 0.00, longitute: self.mainPAgeViewModel?.coordinate.longitude ?? 0.00)
     }
 }
@@ -259,8 +265,20 @@ extension MainPageViewController: LocationManagerDelegate{
 
 //MARK: Refresh data
 extension MainPageViewController {
-    func refreshData(_ selectedDistance: Bool? ){
-        guard selectedDistance == true else {return}
+    func refreshData(_ selectedDistance: LocationSearchAreaStatus?){
+
+        switch selectedDistance {
+        case .locationChanced:
+            self.customTextField.text = ""
+            break
+        case .some(.zero):
+            return
+        case .some(.value):
+            break
+        case .none:
+            break
+        }
+        
         var allAnnotations = self.mapView.annotations
         self.mapView.removeAnnotations(allAnnotations)
         allAnnotations.removeAll()
@@ -290,7 +308,3 @@ extension MainPageViewController{
         return degrees * .pi / 180
     }
 }
-
-
-
-

@@ -7,14 +7,9 @@
 
 import Foundation
 
-public enum ErrorClasss:  Error {
-    case failedFetch
-    case unknown
-}
-
 public class MockClass: FlightServiceProtocol {
     public func fetchFlights(lomin: Float?, lamin: Float?, lomax: Float?, lamax: Float?, completion: @escaping (Result<FligthResponseModel, ErrorClasss>) -> Void)  {
-        let baseURL = "\(lomin ?? 0.00)\(lamin ?? 0.00)\(lomax ?? 0.00)\(lamax ?? 0.00)"
+        _ = "\(lomin ?? 0.00)\(lamin ?? 0.00)\(lomax ?? 0.00)\(lamax ?? 0.00)"
         let states: [Flights] = []
 
         let flightResponseModel = FligthResponseModel(time: 1, states: states)
