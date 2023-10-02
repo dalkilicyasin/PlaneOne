@@ -23,6 +23,7 @@
 		D9345FCA2AC898F7007D5D03 /* Flights.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9345FC92AC898F7007D5D03 /* Flights.swift */; };
 		D9345FCE2AC89C0C007D5D03 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D9345FCD2AC89C0C007D5D03 /* SnapKit */; };
 		D9345FD52AC8A0AB007D5D03 /* FlightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9345FD42AC8A0AB007D5D03 /* FlightService.swift */; };
+		D9FB33232ACB43F700C12ADA /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FB33222ACB43F700C12ADA /* MockData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		D9345FC72AC8989E007D5D03 /* FligthResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FligthResponseModel.swift; sourceTree = "<group>"; };
 		D9345FC92AC898F7007D5D03 /* Flights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flights.swift; sourceTree = "<group>"; };
 		D9345FD42AC8A0AB007D5D03 /* FlightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightService.swift; sourceTree = "<group>"; };
+		D9FB33222ACB43F700C12ADA /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +105,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D92731942ACA362800D9A410 /* Extensions */ = {
+		D92731942ACA362800D9A410 /* MockClasses */ = {
 			isa = PBXGroup;
 			children = (
-				D92731952ACA364100D9A410 /* String.Extentions.swift */,
+				D9FB33222ACB43F700C12ADA /* MockData.swift */,
 			);
-			path = Extensions;
+			path = MockClasses;
 			sourceTree = "<group>";
 		};
 		D931783A2AC8D376003A5E42 /* ViewModel */ = {
@@ -153,7 +155,8 @@
 			children = (
 				D9345F942AC86C1C007D5D03 /* AppDelegate.swift */,
 				D9345F962AC86C1C007D5D03 /* SceneDelegate.swift */,
-				D92731942ACA362800D9A410 /* Extensions */,
+				D9FB33242ACB690B00C12ADA /* Extensions */,
+				D92731942ACA362800D9A410 /* MockClasses */,
 				D9348C772AC9F9B10060369B /* Singleton */,
 				D931783B2AC8D38C003A5E42 /* Controller */,
 				D931783A2AC8D376003A5E42 /* ViewModel */,
@@ -230,6 +233,14 @@
 				D9345FC92AC898F7007D5D03 /* Flights.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		D9FB33242ACB690B00C12ADA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D92731952ACA364100D9A410 /* String.Extentions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,6 +390,7 @@
 				D9345F972AC86C1C007D5D03 /* SceneDelegate.swift in Sources */,
 				D9345FCA2AC898F7007D5D03 /* Flights.swift in Sources */,
 				D9345FD52AC8A0AB007D5D03 /* FlightService.swift in Sources */,
+				D9FB33232ACB43F700C12ADA /* MockData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,28 +9,36 @@ import XCTest
 @testable import PlaneOne
 
 final class PlaneOneTests: XCTestCase {
+    let fetchData = MockClass()
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testFetchDataFuncSuccess(){
+        var successData = false
+        fetchData.fetchFlights(lomin: 1.0, lamin: 1.0, lomax: 1.0, lamax: 1.0) { result in
+            switch result{
+            case .success(_):
+                successData = true
+            case .failure(_):
+                successData = false
+            }
         }
+        XCTAssertEqual(successData, true)
     }
 
+    func testFetchDataFuncError(){
+        var errorValue: ErrorClasss?
+        fetchData.fetchFlights(lomin: 1.0, lamin: nil, lomax: 1.0, lamax: nil) { result in
+            switch result{
+            case .success(_):
+                return
+            case .failure(let error):
+                switch error {
+                case .failedFetch:
+                    errorValue = ErrorClasss.failedFetch
+                case .unknown:
+                    errorValue = ErrorClasss.unknown
+                }
+            }
+        }
+        XCTAssertEqual(errorValue, ErrorClasss.failedFetch)
+    }
 }

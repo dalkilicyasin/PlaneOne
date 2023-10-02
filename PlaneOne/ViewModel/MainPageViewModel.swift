@@ -27,7 +27,7 @@ class MainPageViewModel {
     var coordinate = CLLocationCoordinate2D()
     var timeRemaining = 5
     var selectedCountry = "Selected Country :"
-    
+
     init(flightProtocolDelegate: FlightServiceProtocol = FlightService() ) {
         self.flightProtocolDelegate = flightProtocolDelegate
     }
@@ -51,8 +51,8 @@ class MainPageViewModel {
             case .success(let flights):
                 strongSelf.flights = flights.states ?? []
                 self?.mainPageVieModelDelegate?.valueHasChanged(flight: strongSelf.flights, coordinate: strongSelf.coordinate)
-            case .failure(_):
-                return
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         })
     }

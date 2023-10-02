@@ -179,8 +179,8 @@ extension MainPageViewController: MKMapViewDelegate {
         print("\(center.latitude) --\(center.longitude) ")
         self.mainPAgeViewModel?.coordinate = center
         self.mainPAgeViewModel?.searchDistance = 50.00
-        self.refreshData()
-        
+        self.refreshData(true)
+
         //Get max 50 km distance around user
         self.searchDistance(searchAre: 50, latitude: center.latitude, longitute: center.longitude)
         
@@ -237,8 +237,11 @@ extension MainPageViewController {
     
     @objc func hideKeyboard() {
         view.endEditing(true)
-        guard self.customTextField.text?.count != 0 else {return}
-        self.refreshData()
+        guard self.customTextField.text?.count != 0 else {
+            self.mainPAgeViewModel?.searchDistance = 50.0
+            self.refreshData(false)
+            return}
+        self.refreshData(true)
         self.searchDistance(searchAre: self.mainPAgeViewModel?.searchDistance ?? 50.00, latitude: self.mainPAgeViewModel?.coordinate.latitude ?? 0.00, longitute: self.mainPAgeViewModel?.coordinate.longitude ?? 0.00)
     }
 }
@@ -248,7 +251,7 @@ extension MainPageViewController: LocationManagerDelegate{
     func addressUpdate(address: String) {
         self.customLocationLabel.text = address
     }
-    
+
     func getAdress(latitute: Double, longitute: Double ) {
         LocationManager.shared.convertLatLongToAddress(latitude: latitute, longitude: longitute)
     }
@@ -256,7 +259,8 @@ extension MainPageViewController: LocationManagerDelegate{
 
 //MARK: Refresh data
 extension MainPageViewController {
-    func refreshData(){
+    func refreshData(_ selectedDistance: Bool? ){
+        guard selectedDistance == true else {return}
         var allAnnotations = self.mapView.annotations
         self.mapView.removeAnnotations(allAnnotations)
         allAnnotations.removeAll()
