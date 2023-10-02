@@ -63,6 +63,7 @@ class MainPageViewModel {
                 print ("\(self.timeRemaining) seconds")
                 self.timeRemaining -= 1
                 if self.timeRemaining == 0 {
+                    guard self.flights.isEmpty else {return}
                     self.fetchFlightData()
                 }
             } else {
