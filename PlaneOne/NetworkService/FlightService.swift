@@ -12,7 +12,7 @@ import UIKit
 //MARK: BaseURL and user info for data fetch
 enum Constants: String {
     case baseURL = "https://opensky-network.org/api/states/all"
-    case userName = "Dalkilic"
+    case userName = "Dalkilici"
     case password = "Yd123456"
 }
 
