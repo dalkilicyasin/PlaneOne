@@ -12,6 +12,13 @@ protocol LocationManagerDelegate{
     func addressUpdate(address: String)
 }
 
+//Burada teknik mülakkatta red almanın sebebi initilazierı private yapmaman. func da public kalmıştı. Eğerki intiliazerı private yapmazsan burdaki sınıfın fonksiyonuna 2 3 yerden ulaşım sağlanabilirdi. Farklı bir sınıfta aşşağıdaki gibi bir instance oluşturduğunda hem sigleton hemde normal şekilde getUserLocation() fonksiyonuna ulaşabilirsin fakat private init yaptığında sadece sigleton ile access sağlanabilir. Sigleton yapısının amacıda tek bir yerden ulaşım sağlamaktır.
+
+/*let locationManager = LocationManager()
+ locationManager.getUserLocation() // eğerki init private yapılmazsa direk bu şekilde de func aceess yapabilirsin. Eğer LocationManager içersinde init private olarak tanımlanmışsa ve  bu şekilde  ulaşmaya çalışırsan access hatası alırsın
+
+ */
+
 class LocationManager: NSObject, CLLocationManagerDelegate {
     static let shared = LocationManager()
     let manager = CLLocationManager()
@@ -19,7 +26,11 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
     var streetAdreess = ""
     var locationManagerDelegate: LocationManagerDelegate?
 
-    public func getUserLocation(completion: @escaping ((CLLocation) -> Void)){
+    private override init(){
+
+    }
+
+     func getUserLocation(completion: @escaping ((CLLocation) -> Void)){
         self.completion = completion
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
